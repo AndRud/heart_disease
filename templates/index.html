@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>
+      Heart disease
+    </title>
+</head>
+<body>
+
+<form action="/result" method="POST" >
+  <div class="container">
+    <h1>Heart Disease</h1>
+    <p>Please fill out the form below.</p>
+    <hr>
+
+    <label for="age"><b>Age</b></label>
+    <input type="number" name="age" min = "0" max = "110" placeholder="Enter age" required>
+
+    <label for="sex"><b>Sex</b></label>
+    <select name = "sex">
+      <option value="1" >Male</option>
+      <option value="0" >Female</option> 
+    </select>
+  
+    <label for = "cp"> <b>Chest pain type</b> </label>
+    <select name = "cp">
+      <option value = "0">typical angina</option>
+      <option value = "1">atypical angina</option>
+      <option value = "2">non-anginal pain</option>
+      <option value = "3">asymptomatic</option>
+    </select>
+    
+    <label for = "trestbps"> <b>Resting blood pressure in mm Hg</b> </label>
+    <input type="number" name="trestbps" min = "0" max = "250" placeholder="Enter blood pressure" required>
+
+    <label for = "chol"> <b>Serum cholestoral in mg/dl</b> </label>
+    <input type="number" name="chol" min = "0" max = "1000" placeholder="Enter cholesterol" required>
+
+    <label for = "fbs"> <b>Fasting blood sugar > 120 mg/d ?</b> </label>
+    <select name = "fbs">
+      <option value="1">yes</option>
+      <option value="0">no</option> 
+    </select>
+
+    <label for = "restecg"> <b> Resting electrocardiographic results</b> </label>
+    <select name = "restecg">
+      <option value = "0">normal</option>
+      <option value = "1">having ST-T wave abnormality</option>
+      <option value = "2">left ventricular hyperthrophy</option>
+    </select>
+
+    <label for = "thalach"> <b>Maximum heart rate achieved</b> </label>
+    <input type="number" name="thalach" min = "0" max = "300" placeholder="Enter heat rate" required>
+
+    <label for = "exang"> <b>Exercise induced angina</b> </label>
+    <select name = "exang">
+      <option value="1" >yes</option>
+      <option value="0" >no</option> 
+    </select>
+
+    <label for = "slope"> <b>The slope of the peak exercise ST segment</b> </label>
+    <select name = "slope">
+      <option value="0">upsloping</option>
+      <option value="1">flat</option> 
+      <option value="2">downsloping</option> 
+    </select>
+
+    <label for = "ca"> <b>Number of major vessels colored by flourosopy</b> </label>
+    <select name = "ca">
+      <option value="0">0</option>
+      <option value="1">1</option> 
+      <option value="2">2</option>
+      <option value="3">3</option> 
+      <option value="4">4</option> 
+    </select>
+
+    <hr>
+
+    <button type="submit" class="button">Predict</button> 
+</div>
+</form>
+
+</body>
+
+</html>
